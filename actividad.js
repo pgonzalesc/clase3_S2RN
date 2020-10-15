@@ -15,3 +15,12 @@ const addArray= (array, element) => {
 }
 
 console.log(addArray(['Monitor', 'Mouse', 'Teclado'], 'CPU'));
+
+const bill = (products, tax) => {
+    let total = 0;
+    for (let i = 0; i < products.length; i++) {
+        total += products[i] + products[i] * tax;
+    }
+    return total;
+}
+console.log('bill', bill([10,12,13], 0.18));
